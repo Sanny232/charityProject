@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo"><img src="images/logo.webp" alt=""><i>Lorem</i></div>
+            <div class="headerItems">
+                <div class="headerItem" onclick="window.location.href='index.html'">Головна
+                </div>
+                <div class="headerItem">Інформація
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="contact.html">Підтримка</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="news.html">Блог</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerItem">Допомогти
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="donate.html">Пожертвувати</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="newspage.html?id=-M_k9Rhd6jNTr3n0YQK6">Стати волонтером</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="pets.html">Взяти тваринку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main style="display: none">
+    <form action="" class="articleForm">
+        <label for="articleTitleArea">Заголовок статті</label><br>
+        <input type="text" id="articleTitleArea" name="articleTitleArea"><br>
+        <label for="articleTextArea">Текст статті</label><br>
+        <textarea name="articleTextArea" id="articleTextArea" cols="30" rows="10"></textarea><br>
+        <input type="file" id="articlePhotoUploader"><br>
+        <progress class="uploaderBar" value="0" max="100">0</progress>
+        <input type="submit">
+    </form>
+
+    <form action="" class="petForm">
+        <label for="petNameInput">Ім'я тваринки</label><br>
+        <input type="text" id="petNameInput" name="petNameInput"><br>
+        <label for="petTypeSelect">Тип тваринки:</label><br>
+        <select name="petTypeSelect" id="petTypeSelect">
+            <option value="Кіт">Кіт</option>
+            <option value="Собака">Собака</option>
+            <option value="Єнот">Єнот</option>
+        </select><br>
+        <label for="petGenderSelect">Стать</label><br>
+        <select name="petGenderSelect" id="petGenderSelect">
+            <option value="male">Хлопчик</option>
+            <option value="female">Дівчинка</option>
+        </select><br>
+        <label for="petAgeInput">Вік</label><br>
+        <input type="text" id="petAgeInput" name="petAgeInput"><br>
+        <label for="petDescInput">Опис:</label><br>
+        <textarea name="petDescInput" id="petDescInput" cols="30" rows="10"></textarea><br>
+        <input type="file" id="petPhotoUploader"><br>
+        <progress class="petUploaderBar" value="0" max="100">0</progress>
+        <br>
+        <input type="submit">
+    </form>
+</main>
+</body>
+</html>

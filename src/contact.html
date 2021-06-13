@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зв'язатися</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo"><img src="images/logo.webp" alt=""><i>Lorem</i></div>
+            <div class="headerItems">
+                <div class="headerItem" onclick="window.location.href='index.html'">Головна
+                </div>
+                <div class="headerItem">Інформація
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="contact.html">Підтримка</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="news.html">Блог</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerItem">Допомогти
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="donate.html">Пожертвувати</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="newspage.html?id=-M_k9Rhd6jNTr3n0YQK6">Стати волонтером</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="pets.html">Взяти тваринку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <p class="bigTitle">Зв'язок з нами</p>
+    <div class="container">
+        <form action="" class="contactForm">
+            <p><label for="contactEmail">Ваш e-mail</label></p>
+            <p><input type="email" id="contactEmail" name="contactEmail"></p>
+            <p><label for="contactText">Ваше питання/звернення</label></p>
+            <p><textarea id="contactText" name="contactText" cols="30" rows="10"></textarea></p>
+            <p><input type="submit" value="Відправити"></p>
+        </form>
+        <div class="contactContainer">
+            <p>Ми знаходимось за адресою: м.Біла Церква, вул. Вернадського 10</p>
+            <p>Контактний телефон: 11-22-33</p>
+            <div id="map"></div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

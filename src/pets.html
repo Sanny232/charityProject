@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забрати тваринку</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo"><img src="images/logo.webp" alt=""><i>Lorem</i></div>
+            <div class="headerItems">
+                <div class="headerItem" onclick="window.location.href='index.html'">Головна
+                </div>
+                <div class="headerItem">Інформація
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="contact.html">Підтримка</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="news.html">Блог</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerItem">Допомогти
+                    <div class="submenu">
+                        <div class="submenuItem">
+                            <a href="donate.html">Пожертвувати</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="newspage.html?id=-M_k9Rhd6jNTr3n0YQK6">Стати волонтером</a>
+                        </div>
+                        <div class="submenuItem">
+                            <a href="pets.html">Взяти тваринку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="container">
+            <form class="filtersPanel">
+                <label for="filtersPanelType">Тип: </label>
+                <select name="filtersPanelType" id="filtersPanelType">
+                    <option value="all">Будь-який</option>
+                    <option value="Кіт">Кіт</option>
+                    <option value="Собака">Собака</option>
+                    <option value="Єнот">Єнот</option>
+                </select>
+                <label for="filtersPanelGender">Стать: </label>
+                <select name="filtersPanelGender" id="filtersPanelGender">
+                    <option value="all">Будь-яка</option>
+                    <option value="male">Хлопчик</option>
+                    <option value="female">Дівчинка</option>
+                </select>
+                <input type="text" name="petSearch" id="petSearch">
+            </form>
+            <button class="back">Назад</button>
+            <button class="next">Далі</button>
+            <div class="pageNumber"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="pets">
+
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="container">
+            <div class="modalPetTitle"></div>
+            <div class="modalMainPetContent">
+                <div class="modalPetImage"><img src="./images/c1.jpg" alt=""></div>
+                <div class="modalPetInfo">
+                    <div class="modalPetInfoRow">
+                        <div class="infoRowName">Тип</div>
+                        <div class="modalPetType"></div>
+                    </div>
+                    <div class="modalPetInfoRow">
+                        <div class="infoRowName">Вік</div>
+                        <div class="modalPetAge"></div>
+                    </div>
+                    <div class="modalPetInfoRow">
+                        <div class="infoRowName">Опис</div>
+                        <div class="modalPetDesc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modalButtons">
+                <a class="modalTake" href=""><img src="images/cat.svg" alt="">Забрати</a>
+                <div class="takeInfo noDisplay"> <p>Чудове рішення! Щоб забрати дану тваринку додому, зв'яжіться з нами одним із зручних для вас метоів:</p>
+                    <p>- Зателефонуйте нам за телефоном +3806812345678</p>
+                    <p>- Напишіть у нашу <a href="contact.html">підтримку</a></p>
+                    <p>- Або відразу приїзджайте за адресою: м.Київ, вулиця Невідома, буд.1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modalOverlay"></div>
+</main>
+<footer></footer>
+</body>
+</html>
